@@ -400,7 +400,7 @@ class Facade
   end
 
   def list_genealogy(genealogy,taxonomy_name,list,reverse=false)
-    # supports list_ancestors and list_descendents
+    # supports list_ancestors and list_descendants
     begin
       raise "Taxonomy \"#{taxonomy_name}\" not found" unless Taxonomy.exists?(taxonomy_name)
       tax = Taxonomy.lazy(taxonomy_name)
